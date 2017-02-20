@@ -18,10 +18,8 @@
 #define scstr(t) scanf("%s",t)
 
 #define mem(a,b) memset(a,(b),sizeof(a))
-#define FOR(i,j,n,inc) for(int i=j;i<n;i+=inc)
-#define RFOR(i,j,n,inc) for(int i=j;i>=n;i-=inc)
-#define rep(i,n) FOR(i,0,n,1)
-#define rrep(i,n) RFOR(i,n,0,1)
+#define rep(i,n) for(int i=0;i<n;i++)
+#define rrep(i,n) for(int i=n;i>=0;i--)
 #define all(temp) temp.begin(),temp.end()
 #define rall(temp) temp.end(),temp.begin()
 
