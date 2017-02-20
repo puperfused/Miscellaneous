@@ -18,8 +18,8 @@
 #define scstr(t) scanf("%s",t)
 
 #define mem(a,b) memset(a,(b),sizeof(a))
-#define rep(i,n) for(int i=0;i<n;i++)
-#define rrep(i,n) for(int i=n;i>=0;i--)
+#define rep(i,intl,n) for(int i=intl;i<n;i++)
+#define rrep(i,intl,n) for(int i=n;i>=intl;i--)
 #define all(temp) temp.begin(),temp.end()
 #define rall(temp) temp.end(),temp.begin()
 
