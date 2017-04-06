@@ -73,6 +73,20 @@ void println_ld(li n)     	{if(n<0){n=-n;putchar('-');}int i=11;char output_buff
 void println_lld(ll n)     {if(n<0){n=-n;putchar('-');}int i=21;char output_buffer[22];output_buffer[21]='\n';do{output_buffer[--i]=(n%10)+'0';n/=10;}while(n);do{putchar(output_buffer[i]);}while(++i<22);}
 void println_llu(ull n)     {int i=21;char output_buffer[22];output_buffer[21]='\n';do{output_buffer[--i]=(n%10)+'0';n/=10;}while(n);do{putchar(output_buffer[i]);}while(++i<22);}
 
+uint64_t ToInteger(const std::string& s)
+{
+	std::istringstream istr(s);
+	uint64_t v;
+	istr >> v;
+	return v;
+}
+
+std::string ToString(const uint64_t& v)
+{
+	std::ostringstream ostr;
+	ostr << v;
+	return ostr.str();
+}
 //lcm
 ll lcm(ll a, ll b) {return a * (b / gcd(a, b));}
 //modular exponentiation ((a^b)%c))
